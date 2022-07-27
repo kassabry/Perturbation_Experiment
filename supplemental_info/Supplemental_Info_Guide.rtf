@@ -1,0 +1,297 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww15820\viewh10880\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qc\partightenfactor0
+
+\f0\b\fs32 \cf0 \ul \ulc0 Supplemental Information Guide \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b0 \cf0 \ulnone \
+
+\fs28 Folders within the Directory: \
+
+\fs24 \
+
+\f0\b\fs26 Data_With_Similarity
+\f1\b0 : \
+
+\fs24 \
+- final_similarity_data.pdf: Data File of Similarity with Generated Molecules originating from SRC Kinase Inhibitors and the known SRC 			         Kinase Inhibitor it is closest to. \
+	\
+	Columns: SRC Mol (Known SRC Kinase Inhibitor) \
+		      Similarity (similarity score)\
+		      Mol (Generated Novel Molecule)\
+		      smiles (SMILE string of generated molecule)\
+		      qed (QED value of generated molecule)\
+		      logP (logP value of generated molecule)\
+		      SAS (SAS value of generated molecule)\
+		      rings (number of rings for generated molecule)\
+		      kinase inhibition likeliness (kinase inhibition score of generated molecule)\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 - final_similarity_data_kinase_family (1).pdf: Data File of Similarity with Generated Molecules originating from various Kinase Inhibitor families and 							the known SRC Kinase Inhibitor it is closest to. \
+	\
+	Columns: SRC Mol (Known SRC Kinase Inhibitor) \
+		      Similarity (similarity score of generated molecule to known SRC Kinase Inhibitor)\
+		      smiles (SMILE string of generated molecule)\
+		      Mol (Generated Novel Molecule)\
+\
+		      Class (Originating Kinase Family):\
+			0: ABL1\
+			2: EGFR\
+			3: CSF1R\
+			4: FLT3\
+			5: KDR\
+			6: LCK\
+			7: MAPK10\
+			8: MAPK14\
+			9: MET\
+\
+		      qed (QED value of generated molecule)\
+		      logP (logP value of generated molecule)\
+		      SAS (SAS value of generated molecule)\
+		      rings (number of rings for generated molecule)\
+		      kinase inhibition likeliness (kinase inhibition score of generated molecule)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+
+\f0\b\fs26 DataFiles: \
+
+\f1\b0\fs24 \
+- Original_Set.csv: Original set of generated molecules produced from kinase families\
+	\
+	Columns: smiles (SMILE strings for generated molecules)\
+		     distance (how far the new encoding is from the original encoding)\
+		     count (number of each SMILE string produced)\
+		     mol (generated molecule image path)\
+\
+		     Class (Originating Kinase Family):\
+			0: ABL1\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 			2: EGFR\
+			3: CSF1R\
+			4: FLT3\
+			5: KDR\
+			6: LCK\
+			7: MAPK10\
+			8: MAPK14\
+			9: MET\
+\
+		     qed (QED value of generated molecule)\
+		     logP (logP value of generated molecule)\
+		     SAS (SAS value of generated molecule)\
+\
+- All_Uniques.csv: unique set of generated molecules produced by originating families\'97 created from Original_Set,csv		    \
+	Columns: same as above, but includes structural and chemical properties calculated by RDKit\
+			\
+			smiles (SMILE strings for generated molecules)\
+		     	distance (how far the new encoding is from the original encoding)\
+		     	count (number of each SMILE string produced)\
+		     	mol (generated molecule image path)\
+			\
+			Class (Originating Kinase Family):\
+\
+			0: ABL1\
+			2: EGFR\
+			3: CSF1R\
+			4: FLT3\
+			5: KDR\
+			6: LCK\
+			7: MAPK10\
+			8: MAPK14\
+			9: MET\
+\
+			\
+			Characteristics: \
+				rings\
+				weight\
+				csp3\
+				hallkier count\
+				laputeASA\
+				alicarbo\
+				alihetero\
+				alirings\
+				amide bonds\
+				arocarbo\
+				arohetero\
+				arorings\
+				stereocenter\
+				bridgehead\
+				hba\
+				hbd\
+				rotatable\
+\
+- Over_75_Kinase.csv: generated molecules that have a kinase score of 0.75 or above\
+\
+	Columns:      smiles (SMILE strings for generated molecules)\
+		     	distance (how far the new encoding is from the original encoding)\
+		     	count (number of each SMILE string produced)\
+		     	mol (generated molecule image path)\
+			\
+			Class (Originating Kinase Family):\
+\
+			0: ABL1\
+			2: EGFR\
+			3: CSF1R\
+			4: FLT3\
+			5: KDR\
+			6: LCK\
+			7: MAPK10\
+			8: MAPK14\
+			9: MET\
+\
+			\
+			Characteristics: \
+				rings\
+				weight\
+				csp3\
+				hallkier count\
+				laputeASA\
+				alicarbo\
+				alihetero\
+				alirings\
+				amide bonds\
+				arocarbo\
+				arohetero\
+				arorings\
+				stereocenter\
+				bridgehead\
+				hba\
+				hbd\
+				rotatable\
+			\
+			Kinase Inhibition Likeliness\
+\
+- Top_100_Mol.csv: top 100 generated molecules with highest similarity to known SRC kinase inhibitors\
+\
+	Columns:      Known Mol (SRC Known Kinase Inhibitor image path)\
+			similarity (similarity score of generated molecule to known SRC Kinase Inhibitor)\
+			smiles (SMILE strings for generated molecules)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 		     	distance (how far the new encoding is from the original encoding)\
+		     	count (number of each SMILE string produced)\
+		     	mol (generated molecule image path)\
+			\
+			Class (Originating Kinase Family):\
+\
+			0: ABL1\
+			2: EGFR\
+			3: CSF1R\
+			4: FLT3\
+			5: KDR\
+			6: LCK\
+			7: MAPK10\
+			8: MAPK14\
+			9: MET\
+\
+			\
+			Characteristics: \
+				rings\
+				weight\
+				csp3\
+				hallkier count\
+				laputeASA\
+				alicarbo\
+				alihetero\
+				alirings\
+				amide bonds\
+				arocarbo\
+				arohetero\
+				arorings\
+				stereocenter\
+				bridgehead\
+				hba\
+				hbd\
+				rotatable\
+			\
+			Kinase Inhibition Likeliness\
+\
+
+\f0\b\fs26 Prelim_Data: Beginning data from the original experiment- generation of novel molecules from SRC Kinase Inhibitors
+\f1\b0\fs24 \
+\
+-  Top_100_Cluster_1.xlsx: Top 100 Generated Molecules from cluster 1 for initial experiments- generation of novel molecules from SRC Kinase Inhibitors\
+	\
+	Columns: Mol (generated molecule image)\
+	smiles (SMILE strings for generated molecules)\
+	distance (how far the new encoding is from the original encoding)\
+	count (number of each SMILE string produced)\
+	Characteristics: \
+				rings\
+				weight\
+				csp3\
+				hallkier count\
+				laputeASA\
+				alicarbo\
+				alihetero\
+				alirings\
+				amide bonds\
+				arocarbo\
+				arohetero\
+				arorings\
+				stereocenter\
+				bridgehead\
+				hba\
+				hbd\
+				rotatable\
+			\
+			Kinase Inhibition Likeliness\
+\
+-  Top_100_Cluster_2.xlsx: Top 100 Generated Molecules from cluster 2 for initial experiments- generation of novel molecules from SRC Kinase Inhibitors\
+	\
+	Columns: Mol (generated molecule image)\
+		smiles (SMILE strings for generated molecules)\
+		distance (how far the new encoding is from the original encoding)\
+		count (number of each SMILE string produced)\
+		Characteristics: \
+				rings\
+				weight\
+				csp3\
+				hallkier count\
+				laputeASA\
+				alicarbo\
+				alihetero\
+				alirings\
+				amide bonds\
+				arocarbo\
+				arohetero\
+				arorings\
+				stereocenter\
+				bridgehead\
+				hba\
+				hbd\
+				rotatable\
+			\
+		Kinase Inhibition Likeliness\
+\
+- 2_Cluster_Top_100_1.csv & 2_Cluster_Top_100_2.csv: csv files of excel sheets\
+\
+
+\f0\b GRAPHS_FINAL: 
+\f1\b0 graphs of chemical properties \'97 average values of properties for generated molecules by originating families\
+\
+	- alicarbo_bar: average aliphatic carbocycles of generated molecules by originating family\
+	- alihetero_bar: average aliphatic heterocycles of generated molecules by originating family\
+	- alirings_bar: average aliphatic rings of generated molecules by originating family\
+	- arocarbo_bar: average aromatic carbocycles of generated molecules by originating family\
+	- arohetero_bar: average aromatic heterocycles of generated molecules by originating family\
+	- arorings_bar: average aromatic rings of generated molecules by originating family\
+	- csp3_bar: average CSP3 value of generated molecules by originating family\
+	- hallkier_bar: average hallkier count of generated molecules by originating family\
+	- labuteasa_bar: average labuteasa value of generated molecules by originating family\
+	- weight_bar: average molecular weight of generated molecules by originating family\
+	- rotatable_bar: average rotatable bonds of generated molecules by originating family\
+\
+
+\f0\b chem_prop_hist_9_kinase_families
+\f1\b0 : Histogram distribution of properties for all molecules in the 9 kinase families used for the training set- initial chemical analysis\
+
+\f0\b \
+
+\f1\b0 \
+\
+\
+	\
+	}
