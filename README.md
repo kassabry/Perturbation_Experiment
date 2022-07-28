@@ -1,15 +1,33 @@
-![chemical VAE](https://github.com/aspuru-guzik-group/chemical_vae/blob/master/aux_data/banner.png?raw=true)
-=============
+# Perturbation Modeling Framework for Novel Design of SRC Kinase Inhibitors 
 
-This repository contains the framework and code for constructing a variational autoencoder (VAE) for use with molecular SMILES, as described in [doi:10.1021/acscentsci.7b00572](http://pubs.acs.org/doi/abs/10.1021/acscentsci.7b00572), with preprint at [https://arxiv.org/pdf/1610.02415.pdf](https://arxiv.org/pdf/1610.02415.pdf).
+Verkhivker Lab at Chapman University
 
-In short, molecular SMILES are encoded into a code vector representation, and can be decoded from the code representation back to molecular SMILES. The autoencoder may also be jointly trained with property prediction to help shape the latent space. The new latent space can then be optimized upon to find the molecules with the most optimized properties of interest.
+Authors: 
 
-In our example, we perform encoding/decoding with the ZINC dataset, and shape the latent space on prediction on logP, QED, and SAS properties.
+* Steven Agajanian
+* Ryan Kassab 
+* Keerthi Krishnan 
+* Gennady Verkhivker
 
-#### Upcoming updates:
-- [ ] Updated Docker environment
-- [ ] Improved tutorial
+This repository contains the framework and code for instilling molecular transformations of kinase inhibitors using targeted perturbation modeling. The software written is a combination of utilizing the ChemVAE architecture developed by Jennifer Wei, Benjamin Sanchez-Lengeling, Dennis Sheberla, Rafael Gomez-Bomberelli, and Alan Aspuru-Guzik (https://github.com/aspuru-guzik-group/chemical_vae/blob/master/aux_data/banner.png?raw=true)[doi:10.1021/acscentsci.7b00572](http://pubs.acs.org/doi/abs/10.1021/acscentsci.7b00572) as well as perturbation modeling architecture developed by the Verkhivker Lab at Chapman University to perform our molecular transformation experiments. Below is a brief description of the folders and files present in the repository.
+
+Files/Folders:
+
+* perturbation_experiment.ipynb file: Notebook containing the software for the use of variational autoencoder, the perturbation modeling experiments, and the post processing analysis
+* Fingerprinting_Similarity.ipynb: Notebook containing examples of similarity testing and implementation
+* chemvae and models: Folders containing the models and architecture used to build and compile ChemVAE
+* data: data folder containing molecular data of our kinase inhibitors and GDB small molecule baseline retrieved from ZINC and GDB-17 database in SMILES format
+* examples: folder containing intro_to_chemvae.ipynb, a notebook with starter code on use of variational autoencoder
+* graphs: folder containing graphs for different stages of analysis in pipeline
+* results: folder containing files of any raw and curated generated data from experimentation
+* supplemental_info: Folder containing supplemental information of experiment results, such as final similarity data of generated molecules to known SRC Inhibitors, graphs represented chemical analysis of generated data, graphs containing analysis of chemical properties from initial data, and preliminary generated data, and a suppemental information guide. 
+* environment.yml: environment file to help set up ChemVAE environment with proper dependencies and tools
+* requirements.txt: text file stating dependencies for certain packages in environment set-up
+
+
+To have the proper set-up for the variational autoencoder framework, please refer to the directions on ChemVAE below and refer to their github link (https://github.com/aspuru-guzik-group/chemical_vae/blob/master/aux_data/banner.png?raw=true) and paper (http://pubs.acs.org/doi/abs/10.1021/acscentsci.7b00572) for more information on ChemVAE: 
+
+# ChemVAE Framework Set Up: 
 
 ## Questions, problems?
 Make a [github issue](https://github.com/aspuru-guzik-group/chemical_vae/issues/new) :smile:. Please be as clear and descriptive as possible.
@@ -87,7 +105,3 @@ It is based on the work published in https://arxiv.org/pdf/1610.02415.pdf by
 
 
 Feel free to reach out to us with any questions! 
-
-## Funding acknowledgements
-
-"This work was supported by the Computational Chemical Sciences Program funded by the U.S.Department of Energy, Office of Science, Basic Energy Sciences, under Award #DE- FG02-17ER16362"
