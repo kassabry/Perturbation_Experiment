@@ -9,7 +9,7 @@ Authors:
 * Keerthi Krishnan 
 * Gennady Verkhivker
 
-This repository contains the framework and code for instilling molecular transformations of kinase inhibitors using targeted perturbation modeling. The software written is a combination of utilizing the ChemVAE architecture developed by Jennifer Wei, Benjamin Sanchez-Lengeling, Dennis Sheberla, Rafael Gomez-Bomberelli, and Alan Aspuru-Guzik (https://github.com/aspuru-guzik-group/chemical_vae/blob/master/aux_data/banner.png?raw=true)[doi:10.1021/acscentsci.7b00572](http://pubs.acs.org/doi/abs/10.1021/acscentsci.7b00572) as well as perturbation modeling architecture developed by the Verkhivker Lab at Chapman University to perform our molecular transformation experiments. Below is a brief description of the folders and files present in the repository.
+This repository contains the framework and code for instilling molecular transformations of kinase inhibitors using generative learning methodologies and targeted perturbation modeling. The software written is a combination of utilizing the ChemVAE architecture developed by Jennifer Wei, Benjamin Sanchez-Lengeling, Dennis Sheberla, Rafael Gomez-Bomberelli, and Alan Aspuru-Guzik (https://github.com/aspuru-guzik-group/chemical_vae/blob/master/aux_data/banner.png?raw=true)[doi:10.1021/acscentsci.7b00572](http://pubs.acs.org/doi/abs/10.1021/acscentsci.7b00572) as well as perturbation modeling architecture developed by the Verkhivker Lab at Chapman University to perform our molecular transformation experiments. Below is a brief description of the folders and files present in the repository.
 
 Files/Folders:
 
