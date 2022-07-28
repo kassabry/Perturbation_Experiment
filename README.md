@@ -15,7 +15,7 @@ Files/Folders:
 
 * perturbation_experiment.ipynb file: Notebook containing the software for the use of variational autoencoder, the perturbation modeling experiments, and the post processing analysis
 * Fingerprinting_Similarity.ipynb: Notebook containing examples of similarity testing and implementation
-* chemvae and models: Folders containing the models and architecture used to build and compile ChemVAE
+* chemvae and models: Folders containing the library of models and architecture used to build and compile ChemVAE (description of model files below)
 * data: data folder containing molecular data of our kinase inhibitors and GDB small molecule baseline retrieved from ZINC and GDB-17 database in SMILES format
 * examples: folder containing intro_to_chemvae.ipynb, a notebook with starter code on use of variational autoencoder
 * graphs: folder containing graphs for different stages of analysis in pipeline
@@ -27,7 +27,7 @@ Files/Folders:
 
 To have the proper set-up for the variational autoencoder framework, please refer to the directions on ChemVAE below and refer to their github link (https://github.com/aspuru-guzik-group/chemical_vae/blob/master/aux_data/banner.png?raw=true) and paper (http://pubs.acs.org/doi/abs/10.1021/acscentsci.7b00572) for more information on ChemVAE: 
 
-# ChemVAE Framework Set Up: 
+# ChemVAE Framework Set Up (information provided by https://github.com/aspuru-guzik-group/chemical_vae/issues/new): 
 
 ## Questions, problems?
 Make a [github issue](https://github.com/aspuru-guzik-group/chemical_vae/issues/new) :smile:. Please be as clear and descriptive as possible.
@@ -88,7 +88,7 @@ train_vae.py : main script for training variational autoencoder
   - Includes Weight_Annealer callback, which is used to update the weight of the KL loss component
 - **vae_utils.py** - utility functions for an autoencoder object, used post processing.
 
-## Authors:
+## Authors of ChemVAE:
 This software is written by Jennifer Wei, Benjamin Sanchez-Lengeling, Dennis Sheberla, Rafael Gomez-Bomberelli, and Alan Aspuru-Guzik (alan@aspuru.com). 
 It is based on the work published in https://arxiv.org/pdf/1610.02415.pdf by
  
